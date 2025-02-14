@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First example</title>
+    </head>
+    <body>
+        <p id="myText">Click the add button</p>
+        <button id="addButton" onclick="addFunction()">Add</button>
+        <button id="resetButton" onclick="resertFunction()">Reset</button>
+        <button id="exitButton" onclick="exitFunction()">Exit</button>
+        <script>
+            function addFunction(){
+                document.getElementById('myText').innerHTML="You have clicked the add button";
+            }
+
+            function resertFunction(){
+                document.getElementById('myText').innerHTML="Click the add button";
+            }
+            function exitFunction(){
+                document.getElementById("myText").innerHTML="Cannot exit";
+            }
+            let x=10;
+            let y=3;
+            function add(x,y){
+                return x+y;
+
+            }
+            let result=add(x,y);
+            alert(result);
+        </script>
+    </body>
+</html>
